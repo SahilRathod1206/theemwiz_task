@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern agency homepage showcasing portfolio, team, and contact."
+    />
+    <title>Home Agency</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts style  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Odometer CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="Agency Logo" />
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="nav-desktop" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#blogs">Blog</a>
+        </nav>
+
+        <nav class="nav-links" id="nav-links" aria-label="Mobile navigation">
+          <div class="nav-header">
+            <img src="./assets/logo.png" alt="Logo" />
+            <i class="fas fa-times" id="close-menu"></i>
+          </div>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#blogs">Blog</a>
+          <button class="btn-secondary">Contact</button>
+        </nav>
+
+        <button class="btn-secondary">Contact</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <p class="hero-label">Modern Studio</p>
+          <img class="star-img" src="assets/Star.png" alt="Background Star" />
+          <h1 class="hero-title">We’re Help To Build Your Dream Project</h1>
+          <p class="hero-desc">
+            Agency provides a full service range including technical skills,
+            design, business understanding.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary">HOW WE WORK</button>
+            <button class="btn-secondary">Contact Us</button>
+          </div>
+
+          <blockquote class="testimonial">
+            <img src="./assets/Bitmap.png" alt="Bitmap" />
+            <div class="testimonial-text">
+              <p>"Put themselves in the merchant's shoes"</p>
+              <p class="client-name">Meta Inc.</p>
+            </div>
+          </blockquote>
+        </div>
+
+        <div class="hero-right">
+          <img src="./assets/pic.png" alt="Hero Graphic" class="hero-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo Grid Section -->
+    <section class="logo-section" aria-label="Client Logos Carousel">
+      <!-- Swiper for tablet and desktop -->
+      <div class="swiper logoSwiper desktop-only">
+        <div class="swiper-wrapper logo-grid">
+          <div class="swiper-slide">
+            <img src="./assets/logo1.png" alt="Logo 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo2.png" alt="Logo 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo3.png" alt="Logo 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo4.png" alt="Logo 4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo5.png" alt="Logo 5" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo1.png" alt="Logo 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo2.png" alt="Logo 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo3.png" alt="Logo 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo4.png" alt="Logo 4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo5.png" alt="Logo 5" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Static grid for mobile -->
+      <div class="logo-grid-static mobile-only">
+        <img src="./assets/logo1.png" alt="Logo 1" />
+        <img src="./assets/logo2.png" alt="Logo 2" />
+        <img src="./assets/logo3.png" alt="Logo 3" />
+        <img src="./assets/logo4.png" alt="Logo 4" />
+        <img src="./assets/logo5.png" alt="Logo 5" />
+      </div>
+    </section>
+
+    <!-- About Section  -->
+    <section class="about-section" id="about" aria-label="About Us">
+      <div class="about-container">
+        <div class="about-left">
+          <img src="./assets/about.png" alt="About Image" class="about-image" />
+        </div>
+
+        <div class="about-right">
+          <p class="subtitle">About</p>
+          <h2 class="title">An Experience Design Agency</h2>
+          <p class="description">Provides a full service range</p>
+          <div class="author">
+            <div class="author-info">
+              <blockquote class="quote">
+                Ability to put themselves in the merchant's shoes. It is meant
+                to partner on the long run, and work as an extension of the
+                merchant's team.
+              </blockquote>
+            </div>
+          </div>
+          <button class="about-btn">About Us</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section  -->
+    <section class="work-section" aria-label="Work Content">
+      <div class="stats-row">
+        <div class="stat">
+          <h3 class="odometer" id="stat-years">0</h3>
+          <span>%</span>
+          <p>Years of experience</p>
+        </div>
+        <div class="stat">
+          <h3 class="odometer" id="stat-members">0</h3>
+          <span>+</span>
+          <p>Agency members</p>
+        </div>
+        <div class="stat">
+          <h3 class="odometer" id="stat-projects">0</h3>
+          <span></span>
+          <p>Projects complete</p>
+        </div>
+      </div>
+
+      <div class="work-content">
+        <div class="work-left">
+          <p class="subtitle">How we work</p>
+          <h2>Making Your Projects Look Awesome</h2>
+          <p class="desc">
+            Technical skills, design, business understanding, ability to put
+            themselves in the client’s shoes.
+          </p>
+          <a class="read-more" href="/">Read More</a>
+        </div>
+        <div class="work-right">
+          <ul class="work-points">
+            <li>
+              <strong>1</strong>
+              <span>Full service range including</span>
+            </li>
+            <li>
+              <strong>2</strong>
+              <span>Technical skills, design, business</span>
+            </li>
+            <li>
+              <strong>3</strong> <span>Themselves in the merchant’s</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-reel-section">
+      <div
+        class="video-thumbnail-container"
+        role="button"
+        aria-label="Play video reel"
+      >
+        <img
+          src="./assets/video_thumbnail.png"
+          alt="Video Thumbnail"
+          class="video-thumbnail"
+        />
+        <div class="video-play-btn">
+          <img src="./assets/play.png" alt="Play Button" />
+        </div>
+        <div class="video-duration">1:45</div>
+      </div>
+
+      <div class="video-content">
+        <h5 class="video-label">Video Reel</h5>
+        <h3 class="video-title">Unlock The Greatest Value Possible</h3>
+        <p class="video-description">
+          Design, business understanding, ability to put themselves in the
+          merchant's shoes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section  -->
+    <section class="portfolio-section" id="services">
+      <p class="portfolio-subtitle">Portfolio</p>
+      <h2 class="portfolio-title">Latest Work</h2>
+
+      <div class="portfolio-tabs desktop-tabs">
+        <button type="button" data-tag="all" aria-pressed="true">
+          Show All<sup>14</sup>
+        </button>
+        <button type="button" data-tag="Design">Design<sup>6</sup></button>
+        <button type="button" data-tag="Branding">Branding<sup>4</sup></button>
+        <button type="button" data-tag="Illustration">
+          Illustration<sup>3</sup>
+        </button>
+        <button type="button" data-tag="Motion">Motion<sup>1</sup></button>
+      </div>
+
+      <div class="portfolio-dropdown mobile-tabs">
+        <select id="portfolioSelect">
+          <option value="all">Show All</option>
+          <option value="Design">Design</option>
+          <option value="Branding">Branding</option>
+          <option value="Illustration">Illustration</option>
+          <option value="Motion">Motion</option>
+        </select>
+        <i class="fa-solid fa-caret-down icon"></i>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-tag="Design">
+          <img src="./assets/sofa.png" alt="SOFA" />
+          <span class="portfolio-tag">Design</span>
+          <h3 class="portfolio-name">SOFA</h3>
+        </div>
+
+        <div class="portfolio-item" data-tag="Branding">
+          <img src="./assets/keyboard.png" alt="Keyboard" />
+          <span class="portfolio-tag">Branding</span>
+          <h3 class="portfolio-name">KeyBoard</h3>
+        </div>
+
+        <div class="portfolio-item" data-tag="Illustration">
+          <img src="./assets/workmedia.png" alt="Work Media" />
+          <span class="portfolio-tag">Illustration</span>
+          <h3 class="portfolio-name">Work Media</h3>
+        </div>
+
+        <div class="portfolio-item" data-tag="Motion">
+          <img src="./assets/dddone.png" alt="DDDone" />
+          <span class="portfolio-tag">Motion</span>
+          <h3 class="portfolio-name">DDDone</h3>
+        </div>
+      </div>
+
+      <button class="portfolio-button btn-secondary">EXPLORE MORE</button>
+    </section>
+
+    <!-- Get Started section  -->
+    <section class="get-started">
+      <div class="started">
+        <div class="gift-icon">
+          <img src="./assets/get-started-icon.png" alt="Gift Icon" />
+        </div>
+
+        <div class="get-started-content">
+          <p class="get-started-label">Get Started</p>
+          <h2 class="get-started-heading">
+            We Help Companies<br />Move Faster
+          </h2>
+          <button class="get-started-button">Contact Us</button>
+        </div>
+
+        <div class="get-started-visual">
+          <img src="./assets/block.png" alt="UI Card" class="ui-card" />
+          <img
+            src="./assets/get-started-Bitmap.png"
+            alt="Model"
+            class="model-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Team testimonial section  -->
+    <section class="testimonial-section">
+      <p class="team-label">Our Team</p>
+      <h2 class="team-heading">Team of Designers<br />and Developers</h2>
+
+      <div class="arrows">
+        <button class="arrow left">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="arrow right">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="team-grid-wrapper">
+        <div class="team-grid" id="teamGrid">
+          <div class="team-card">
+            <div class="team-photo azah">
+              <img src="./assets/team1.png" alt="Team 1" />
+            </div>
+            <div class="team-name">Azah Anyeni</div>
+            <div class="team-role">Designer</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo roelof">
+              <img src="./assets/team2.png" alt="Team 2" />
+            </div>
+            <div class="team-name">Roelof Bekkenenks</div>
+            <div class="team-role">React Developer</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo leonardo">
+              <img src="./assets/team3.png" alt="Team 3" />
+            </div>
+            <div class="team-name">Leonardo Oliveira</div>
+            <div class="team-role">Illustrator</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo izabella">
+              <img src="./assets/team4.png" alt="Team 4" />
+            </div>
+            <div class="team-name">Izabella Tabakova</div>
+            <div class="team-role">Product Designer</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo azah">
+              <img src="./assets/team1.png" alt="Team 1" />
+            </div>
+            <div class="team-name">Azah Anyeni</div>
+            <div class="team-role">Designer</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo roelof">
+              <img src="./assets/team2.png" alt="Team 2" />
+            </div>
+            <div class="team-name">Roelof Bekkenenks</div>
+            <div class="team-role">React Developer</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo leonardo">
+              <img src="./assets/team3.png" alt="Team 3" />
+            </div>
+            <div class="team-name">Leonardo Oliveira</div>
+            <div class="team-role">Illustrator</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo izabella">
+              <img src="./assets/team4.png" alt="Team 4" />
+            </div>
+            <div class="team-name">Izabella Tabakova</div>
+            <div class="team-role">Product Designer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pins">
+        <div class="pin active"></div>
+        <div class="pin"></div>
+        <div class="pin"></div>
+      </div>
+    </section>
+
+    <!-- Pricing Section  -->
+    <section class="pricing-section" id="pricing">
+      <h5 class="section-label">Pricing</h5>
+      <h2 class="section-heading">Check Our Pricing Plans</h2>
+
+      <div class="pricing-cards">
+        <!-- Card 1: Free -->
+        <div class="card">
+          <h5>Consultation</h5>
+          <h3>Free</h3>
+          <p>Your digital marketing efforts, instead of handling in-house.</p>
+          <ul>
+            <li>
+              <span class="icon"><i class="fas fa-plus"></i></span> Brand Design
+            </li>
+            <li>
+              <span class="icon minus"><i class="fas fa-minus"></i></span>
+              Market Analysis
+            </li>
+            <li>
+              <span class="icon minus"><i class="fas fa-minus"></i></span>
+              Production
+            </li>
+          </ul>
+          <button class="btn secondary">CONTACT US</button>
+        </div>
+
+        <!-- Card 2: $1500 -->
+        <div class="card popular">
+          <span class="badge">Popular</span>
+          <h5>Design</h5>
+          <h3>$1500</h3>
+          <p>
+            Provide your business with a variety of digital solutions to
+            promote.
+          </p>
+          <ul>
+            <li>
+              <span class="icon"><i class="fas fa-plus"></i></span> Brand Design
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-plus"></i></span> Market
+              Analysis
+            </li>
+            <li>
+              <span class="icon minus"><i class="fas fa-minus"></i></span>
+              Production
+            </li>
+          </ul>
+          <button class="btn primary">CONTACT US</button>
+        </div>
+
+        <!-- Card 3: $2900 -->
+        <div class="card">
+          <h5>Design+Code</h5>
+          <h3>$2900</h3>
+          <p>Help you hit your marketing goals and grow your business.</p>
+          <ul>
+            <li>
+              <span class="icon"><i class="fas fa-plus"></i></span> Brand Design
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-plus"></i></span> Market
+              Analysis
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-plus"></i></span> Production
+            </li>
+          </ul>
+          <button class="btn secondary">CONTACT US</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faq-section" id="blogs">
+      <div class="faq-left">
+        <h5>FAQ</h5>
+        <h3>Frequently Asked Questions</h3>
+        <p>
+          A digital agency is a business you hire to outsource your digital
+          marketing efforts, instead of handling in-house.
+        </p>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="faq-right">
+        <div class="faq-item active">
+          <div class="faq-question">
+            <h4>A digital agency is a business</h4>
+            <span><i class="fa-solid fa-caret-up icon"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Digital marketing efforts, instead of handling in-house. They can
+              provide your business with a variety of digital solutions to
+              promote your product or service online and help you hit your
+              marketing goals and grow your business.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Hire to outsource your digital</h4>
+            <span><i class="fa-solid fa-caret-down icon"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>This is the answer to the second FAQ item.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Marketing efforts</h4>
+            <span><i class="fa-solid fa-caret-down icon"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>This is the answer to the third FAQ item.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Can provide your business</h4>
+            <span><i class="fa-solid fa-caret-down icon"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>This is the answer to the fourth FAQ item.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get in Touch Section  -->
+    <section class="get-in-touch-section">
+      <img src="./assets/map.png" alt="Map Background" class="map-bg" />
+
+      <form id="contactForm" class="contact-box">
+        <h4 class="contact-heading">Get In Touch</h4>
+
+        <input
+          type="text"
+          name="email"
+          class="input-field"
+          placeholder="Your Email"
+        />
+        <input
+          type="text"
+          name="subject"
+          class="input-field"
+          placeholder="Subject"
+        />
+        <textarea
+          name="message"
+          class="textarea-field"
+          placeholder="Message"
+        ></textarea>
+
+        <button type="submit" class="submit-btn">SUBMIT NOW</button>
+      </form>
+
+      <span class="location-span"
+        ><i class="fa-solid fa-location-dot location-icon"></i>
+      </span>
+    </section>
+
+    <!-- Footer Section  -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <!-- Agency -->
+        <div class="footer-brand">
+          <h4>Agency</h4>
+        </div>
+
+        <!-- Menu Column -->
+        <div class="footer-column">
+          <h5>Menu</h5>
+          <ul>
+            <li>About</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <!-- Service Column -->
+        <div class="footer-column">
+          <h5>Service</h5>
+          <ul>
+            <li>Design</li>
+            <li>Development</li>
+            <li>Marketing</li>
+            <li>See More</li>
+          </ul>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-social">
+          <a href="https://www.facebook.com/"
+            ><span class="social-icon"
+              ><i class="fa-brands fa-facebook-f"></i></span
+          ></a>
+          <a href="https://x.com/home"
+            ><span class="social-icon"
+              ><i class="fa-brands fa-twitter"></i></span
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><span class="social-icon"
+              ><i class="fa-brands fa-instagram"></i></span
+          ></a>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Section -->
+      <div class="footer-bottom">
+        <p>Copyright © 2022 Laaqiq. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Odometer JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
